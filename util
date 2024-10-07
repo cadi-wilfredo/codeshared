@@ -17,3 +17,77 @@ public static String readFileAsString(String fileName) {
         }
         return value;
     }
+
+
+package uy.com.antel.mdm.product.util;
+
+public class AddressProvinceUtils {
+
+    private String localityName;
+    private String localityCode;
+    private String localityIsoCode;
+    private String provinceCode;
+    private String provinceName;
+    private String provinceIsoCode;
+    private String provinceDist;
+
+    public AddressProvinceUtils() {
+    }
+
+    public String getLocalityName() {
+        return localityName;
+    }
+
+    public void setLocalityName(String localityName) {
+        this.localityName = localityName;
+    }
+
+    public String getLocalityCode() {
+        return localityCode;
+    }
+
+    public void setLocalityCode(String localityCode) {
+        this.localityCode = localityCode;
+    }
+
+    public String getLocalityIsoCode() {
+        return localityIsoCode;
+    }
+
+    public void setLocalityIsoCode(String localityIsoCode) {
+        this.localityIsoCode = localityIsoCode;
+    }
+
+    public String getProvinceCode() {
+        return provinceCode;
+    }
+
+    public void setProvinceCode(String provinceCode) {
+        this.provinceCode = provinceCode;
+    }
+
+    public String getProvinceName() {
+        return provinceName;
+    }
+
+    public void setProvinceName(String provinceName) {
+        this.provinceName = provinceName;
+    }
+
+    public String getProvinceIsoCode() {
+        return provinceIsoCode;
+    }
+
+    public void setProvinceIsoCode(String provinceIsoCode) {
+        this.provinceIsoCode = provinceIsoCode;
+    }
+
+    public String getProvinceDist() {
+        return provinceDist;
+    }
+
+    public void setProvinceDist(String provinceDist) {
+        this.provinceDist = provinceDist;
+    }
+
+}
