@@ -1,0 +1,19 @@
+public static String readFileAsString(String fileName) {
+        String value = null;
+        InputStream is = null;
+        try {
+            is = new FileInputStream(fileName);
+            value = new Scanner(is, StandardCharsets.UTF_8).useDelimiter("\\A").next();
+        } catch (IOException e) {
+            LogUtil.log(kibanaLogger, "Error al tratar de leer un archivo como string").error(e);
+        } finally {
+            if (is != null) {
+                try {
+                    is.close();
+                } catch (IOException e) {
+                    LogUtil.log(kibanaLogger, "Error al tratar de cerrar un recurso en la lectura de un archivo como string").error(e);
+                }
+            }
+        }
+        return value;
+    }
